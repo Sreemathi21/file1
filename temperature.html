@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Temperature</title>
+        </head>
+        <body>
+    <script>
+        function chktemp(){
+            let temperature=document.getElementById("temp".value);
+            let message="";
+            if(temperature>30){
+                message="hot"
+            }
+            else if(temperature>20 && temperature<30){
+                message="warm"
+            }
+            else if(temperature>10 && temperature<19){
+                message="cool"
+            }
+            else if(temperature<10){
+                message="cold"
+            }
+
+            document.getElementById("example").innerHTML=message;
+            </script>
+            <div id="container">
+                
+                </div>
+            
